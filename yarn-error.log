@@ -1,0 +1,54 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\dnfvnsxn.yu\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add styled-components
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\dnfvnsxn.yu\bin;C:\Users\dnfvnsxn.yu\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\dnfvnsxn.yu\bin;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Perforce;C:\Program Files\PuTTY;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Users\dnfvnsxn.yu\AppData\Local\Programs\Python\Python38-32\Scripts;C:\Users\dnfvnsxn.yu\AppData\Local\Programs\Python\Python38-32;C:\Users\dnfvnsxn.yu\AppData\Local\Microsoft\WindowsApps;D:\jboss-eap-6.4.0\bin\run.bat;C:\Users\dnfvnsxn.yu\AppData\Local\hyper\app-3.0.2\resources\bin;D:\gradle-6.0.1\bin;C:\Users\dnfvnsxn.yu\AppData\Roaming\npm;C:\Users\dnfvnsxn.yu\AppData\Local\Programs\Microsoft VS Code\bin;D:\apache-ant-1.10.7\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  12.14.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: unable to verify the first certificate
+      at TLSSocket.onConnectSecure (_tls_wrap.js:1321:34)
+      at TLSSocket.emit (events.js:210:5)
+      at TLSSocket._finishInit (_tls_wrap.js:794:8)
+      at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:608:12)
+
+npm manifest: 
+  {
+    "name": "todo-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "dev": "webpack-dev-server --hot"
+    },
+    "license": "ISC",
+    "dependencies": {
+      "react": "^16.8.6",
+      "react-dom": "^16.8.6"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.7.7",
+      "@babel/plugin-proposal-class-properties": "^7.7.4",
+      "@babel/preset-env": "^7.7.7",
+      "@babel/preset-react": "^7.7.4",
+      "babel-loader": "^8.0.6",
+      "react-hot-loader": "^4.12.18",
+      "webpack": "^4.41.5",
+      "webpack-cli": "^3.3.10",
+      "webpack-dev-server": "^3.10.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
