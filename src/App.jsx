@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useCallback } from "react";
 import TodoTemplate from "./components/TodoTemplate";
 import TodoInsert from "./components/TodoInsert";
 import GlobalStyle from "./GlobalStyle";
@@ -10,11 +10,27 @@ const App = () => {
     { id: 2, text: "BBB", checked: true },
     { id: 3, text: "CCC", checked: false },
   ]);
+
+  const nextId = useRef(4);
+
+  const onInsert = useCallback(
+    text => {
+      const todo = {
+        id: nextId.current,
+        text,
+        checked: false,
+      };
+      setTodos(todos.concat(todo));
+      nextId.current += 1;
+    },
+    [todos],
+  );
+
   return (
     <div>
       <GlobalStyle />
       <TodoTemplate>
-        <TodoInsert />
+        <TodoInsert onInsert={onInsert} />
         <TodoList todos={todos} />
       </TodoTemplate>
     </div>
